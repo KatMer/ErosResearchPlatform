@@ -218,6 +218,7 @@
 	item_state = "b_suit"
 	worn_state = "schoolgirl"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/overalls
 	name = "laborer's overalls"
@@ -607,6 +608,8 @@
 	icon_state = "gear_harness"
 	worn_state = "gear_harness"
 	body_parts_covered = 0
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 
 /obj/item/clothing/under/dress/white

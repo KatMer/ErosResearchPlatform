@@ -3,6 +3,7 @@
 	desc = "95% Polyester, 5% Spandex!"
 	gender = PLURAL
 	body_parts_covered = LOWER_TORSO
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/shorts/red
 	name = "red athletic shorts"
@@ -111,6 +112,7 @@
 	worn_state = "blackskirt"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	rolled_sleeves = -1
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/skirt/khaki
 	name = "khaki skirt"
@@ -167,12 +169,14 @@
 	desc = "It's a jumpskirt worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
 	icon_state = "qmf"
 	worn_state = "qmf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/cargotech/skirt
 	name = "cargo technician's jumpskirt"
 	desc = "Skirrrrrts! They're comfy and easy to wear!"
 	icon_state = "cargof"
 	worn_state = "cargof"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/engineer/skirt
 	desc = "It's an orange high visibility jumpskirt worn by engineers. It has minor radiation shielding."
@@ -180,24 +184,28 @@
 	icon_state = "enginef"
 	worn_state = "enginef"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 10)
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/engineer/chief_engineer/skirt
 	desc = "It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of \"Chief engineer\". It has minor radiation shielding."
 	name = "chief engineer's jumpskirt"
 	icon_state = "chieff"
 	worn_state = "chieff"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/engineer/atmospheric_technician/skirt
 	desc = "It's a jumpskirt worn by atmospheric technicians."
 	name = "atmospheric technician's jumpskirt"
 	icon_state = "atmosf"
 	worn_state = "atmosf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/roboticist/skirt
 	desc = "It's a slimming black jumpskirt with reinforced seams; great for industrial work."
 	name = "roboticist's jumpskirt"
 	icon_state = "roboticsf"
 	worn_state = "roboticsf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/scientist/skirt
 	name = "scientist's jumpskirt"
@@ -205,32 +213,38 @@
 	worn_state = "sciencewhitef"
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 10, bio = 0, rad = 0)
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/medical/skirt
 	name = "medical doctor's jumpskirt"
 	icon_state = "medicalf"
 	worn_state = "medicalf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/medical/chemist/skirt
 	name = "chemist's jumpskirt"
 	icon_state = "chemistrywhitef"
 	worn_state = "chemistrywhitef"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/medical/chief_medical_officer/skirt
 	desc = "It's a jumpskirt worn by those with the experience to be \"Chief Medical Officer\". It provides minor biological protection."
 	name = "chief medical officer's jumpskirt"
 	icon_state = "cmof"
 	worn_state = "cmof"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/medical/geneticist/skirt
 	name = "geneticist's jumpskirt"
 	icon_state = "geneticswhitef"
 	worn_state = "geneticswhitef"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/medical/virologist/skirt
 	name = "virologist's jumpskirt"
 	icon_state = "virologywhitef"
 	worn_state = "virologywhitef"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/security/skirt
 	name = "security officer's jumpskirt"
@@ -240,6 +254,7 @@
 	worn_state = "secredf"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/security/warden/skirt
 	desc = "Standard feminine fashion for a Warden. It is made of sturdier material than standard jumpskirts. It has the word \"Warden\" written on the shoulders."
@@ -247,6 +262,7 @@
 	icon_state = "wardenf"
 	item_state = "r_suit"
 	worn_state = "wardenf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/security/head_of_security/skirt
 	desc = "It's a fashionable jumpskirt worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
@@ -254,3 +270,4 @@
 	icon_state = "hosredf"
 	item_state = "r_suit"
 	worn_state = "hosredf"
+	hide_genitals = 0 //Used to see if it hides genitals or not.

@@ -11,6 +11,8 @@
 	var/image/inv_overlay = null	//overlay used when attached to clothing.
 	var/image/mob_overlay = null
 	var/overlay_state = null
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/accessory/Destroy()
 	on_removed()

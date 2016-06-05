@@ -25,6 +25,7 @@
 	worn_state = "dress_rd"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/rank/scientist
 	desc = "It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer as a scientist."
@@ -100,6 +101,8 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	rolled_sleeves = -1
+	hide_genitals = 0 //Used to see if it hides genitals or not.
+
 
 /obj/item/clothing/under/rank/orderly
 	desc = "A white suit to be worn by medical attendants."

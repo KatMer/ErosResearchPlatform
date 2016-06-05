@@ -18,6 +18,7 @@
 	icon_state = "blackjumpskirt"
 	item_state = "bl_suit"
 	worn_state = "blackjumpskirt"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/color/blue
 	name = "blue jumpsuit"

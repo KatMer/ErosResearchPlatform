@@ -4,6 +4,7 @@
 	icon_state = "jeans"
 	gender = PLURAL
 	body_parts_covered = LOWER_TORSO|LEGS
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
 
 /obj/item/clothing/under/pants/classicjeans
 	name = "classic jeans"

@@ -3,6 +3,8 @@
 	siemens_coefficient = 0.9
 	var/list/species_restricted = null //Only these species can wear this kit.
 	var/gunshot_residue //Used by forensics.
+	var/hide_boobs = 1 //Used to see if it hides breasts  or not.
+	var/hide_genitals = 1 //Used to see if it hides genitals or not.
 
 	var/list/accessories = list()
 	var/list/valid_accessory_slots
@@ -671,10 +673,12 @@
 		body_parts_covered &= ~(UPPER_TORSO|ARMS)
 		item_state_slots[slot_w_uniform_str] = "[worn_state]_d"
 		usr << "<span class='notice'>You roll down your [src].</span>"
+		hide_boobs = 0 //Used to see if it hides breasts  or not.
 	else
 		body_parts_covered = initial(body_parts_covered)
 		item_state_slots[slot_w_uniform_str] = "[worn_state]"
 		usr << "<span class='notice'>You roll up your [src].</span>"
+		hide_boobs = 1 //Used to see if it hides breasts  or not.
 	update_clothing_icon()
 
 /obj/item/clothing/under/verb/rollsleeves()
@@ -707,3 +711,26 @@
 /obj/item/clothing/under/rank/New()
 	sensor_mode = pick(0,1,2,3)
 	..()
+
+/obj/item/clothing/ears
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not
+
+/obj/item/clothing/glasses
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not
+
+/obj/item/clothing/head
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
+
+/obj/item/clothing/masks
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
+
+/obj/item/clothing/shoes
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
+
+
+

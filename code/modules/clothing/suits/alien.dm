@@ -13,6 +13,7 @@
 	icon_state = "mantle-unathi"
 	item_state = "mantle-unathi"
 	body_parts_covered = UPPER_TORSO
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 //Taj clothing.
 
@@ -28,3 +29,5 @@
 	desc = "A scarf of coarse fabric. Seems to have ear-holes."
 	icon_state = "zhan_scarf"
 	body_parts_covered = HEAD|FACE
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.

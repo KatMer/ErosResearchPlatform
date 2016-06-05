@@ -235,7 +235,7 @@
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/hydro
 	allowed_roles = list("Botanist", "Xenobiologist")
 
-/datum/gear/suit/wintercoat/cargo
+/datum/gear/suit/wintercoat/carg
 	display_name = "winter coat, cargo"
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/cargo
 	allowed_roles = list("Quartermaster","Cargo Technician")
@@ -259,12 +259,12 @@
 
 /datum/gear/suit/track
 	display_name = "track jacket selection"
-	path = /obj/item/clothing/suit/storage/toggle/track
+	path = /obj/item/clothing/suit/storage/track
 
 /datum/gear/suit/track/New()
 	..()
 	var/list/tracks = list()
-	for(var/track_style in typesof(/obj/item/clothing/suit/storage/toggle/track))
-		var/obj/item/clothing/suit/storage/toggle/track/track = track_style
+	for(var/track_style in typesof(/obj/item/clothing/suit/storage/track))
+		var/obj/item/clothing/suit/storage/track/track = track_style
 		tracks[initial(track.name)] = track
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(tracks))

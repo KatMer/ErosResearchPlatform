@@ -17,6 +17,7 @@
 	body_parts_covered = UPPER_TORSO
 	allowed = list (/obj/item/weapon/gun/energy/lasertag/blue)
 	siemens_coefficient = 3.0
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/redtag
 	name = "red laser tag armour"
@@ -27,6 +28,7 @@
 	body_parts_covered = UPPER_TORSO
 	allowed = list (/obj/item/weapon/gun/energy/lasertag/red)
 	siemens_coefficient = 3.0
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /*
  * Costume
@@ -37,6 +39,8 @@
 	icon_state = "pirate"
 	item_state = "pirate"
 	body_parts_covered = UPPER_TORSO|ARMS
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 
 /obj/item/clothing/suit/hgpirate
@@ -98,6 +102,7 @@
 	item_state = "wcoat"
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 
 /obj/item/clothing/suit/apron/overalls
@@ -238,6 +243,8 @@
 //stripper
 /obj/item/clothing/under/stripper
 	body_parts_covered = 0
+	hide_boobs = 0 //Used to see if it hides breasts  or not.
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/under/stripper/stripper_pink
 	name = "pink swimsuit"
@@ -408,6 +415,7 @@
 	cold_protection = UPPER_TORSO|ARMS
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/storage/bomber/alt
 	name = "bomber jacket"
@@ -425,6 +433,7 @@
 	icon_state = "leather_jacket"
 	item_state = "leather_jacket"
 	body_parts_covered = UPPER_TORSO|ARMS
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/storage/leather_jacket/alt
 	icon_state = "leather_jacket_alt"
@@ -459,6 +468,8 @@
 	icon_closed = "grey_hoodie"
 	min_cold_protection_temperature = T0C - 20
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
+	hide_boobs = 1 //Used to see if it hides breasts  or not.
+	hide_genitals = 1 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/storage/toggle/hoodie/black
 	name = "black hoodie"
@@ -662,6 +673,7 @@
 	desc = "A favorite of jocks everywhere from Sol to Nyx."
 	icon_state = "varsity"
 	item_state = "leather_jacket"
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/varsity/red
 	name = "red varsity jacket"
@@ -685,36 +697,34 @@
 
 //Track Jackets
 
-/obj/item/clothing/suit/storage/toggle/track
+/obj/item/clothing/suit/storage/track
 	name = "track jacket"
 	desc = "a track jacket, for the athletic."
 	icon_state = "trackjacket"
 	item_state = "trackjacket"
-	icon_open = "trackjacket_open"
-	icon_closed = "trackjacket"
 
-/obj/item/clothing/suit/storage/toggle/track/blue
+/obj/item/clothing/suit/storage/track/blue
 	name = "blue track jacket"
 	icon_state = "trackjacketblue"
 	item_state = "trackjacketblue"
 	icon_open = "trackjacketblue_open"
 	icon_closed = "trackjacketblue"
 
-/obj/item/clothing/suit/storage/toggle/track/green
+/obj/item/clothing/suit/storage/track/green
 	name = "green track jacket"
 	icon_state = "trackjacketgreen"
 	item_state = "trackjacketgreen"
 	icon_open = "trackjacketgreen_open"
 	icon_closed = "trackjacketgreen"
 
-/obj/item/clothing/suit/storage/toggle/track/red
+/obj/item/clothing/suit/storage/track/red
 	name = "red track jacket"
 	icon_state = "trackjacketred"
 	item_state = "trackjacketred"
 	icon_open = "trackjacketred_open"
 	icon_closed = "trackjacketred"
 
-/obj/item/clothing/suit/storage/toggle/track/white
+/obj/item/clothing/suit/storage/track/white
 	name = "white track jacket"
 	icon_state = "trackjacketwhite"
 	item_state = "trackjacketwhite"

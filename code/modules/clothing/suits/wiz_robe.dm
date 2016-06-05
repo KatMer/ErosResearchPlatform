@@ -113,6 +113,7 @@
 	icon_state = "gentlecoat"
 	item_state = "gentlecoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	hide_genitals = 0 //Used to see if it hides genitals or not.
 
 /obj/item/clothing/suit/wizrobe/fake
 	name = "wizard robe"
