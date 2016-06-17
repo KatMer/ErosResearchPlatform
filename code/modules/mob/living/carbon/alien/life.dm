@@ -128,11 +128,11 @@
 			overlay_fullscreen("blind", /obj/screen/fullscreen/blind)
 		else
 			clear_fullscreen("blind")
- 			set_fullscreen(disabilities & NEARSIGHTED, "impaired", /obj/screen/fullscreen/impaired, 1)
- 			set_fullscreen(eye_blurry, "blurry", /obj/screen/fullscreen/blurry)
- 			set_fullscreen(druggy, "high", /obj/screen/fullscreen/high)
- 		if(machine)
- 			if(machine.check_eye(src) < 0)
+			set_fullscreen(disabilities & NEARSIGHTED, "impaired", /obj/screen/fullscreen/impaired, 1)
+			set_fullscreen(eye_blurry, "blurry", /obj/screen/fullscreen/blurry)
+			set_fullscreen(druggy, "high", /obj/screen/fullscreen/high)
+		if(machine)
+			if(machine.check_eye(src) < 0)
 				reset_view(null)
 
 	return 1

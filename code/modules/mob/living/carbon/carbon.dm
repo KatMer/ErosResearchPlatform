@@ -270,7 +270,7 @@
 	return 0
 
 /mob/living/carbon/flash_eyes(intensity = FLASH_PROTECTION_MODERATE, override_blindness_check = FALSE, affect_silicon = FALSE, visual = FALSE, type = /obj/screen/fullscreen/flash)
- 	if(eyecheck() < intensity || override_blindness_check)
+	if(eyecheck() < intensity || override_blindness_check)
 		return ..()
 
 

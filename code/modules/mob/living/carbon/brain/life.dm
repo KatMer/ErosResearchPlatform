@@ -209,13 +209,13 @@
 		client.screen.Remove(global_hud.blurry,global_hud.druggy,global_hud.vimpaired)
 
 	if(stat != DEAD)
- 		if(blinded)
- 			overlay_fullscreen("blind", /obj/screen/fullscreen/blind)
- 		else
- 			clear_fullscreen("blind")
- 			set_fullscreen(disabilities & NEARSIGHTED, "impaired", /obj/screen/fullscreen/impaired, 1)
- 			set_fullscreen(eye_blurry, "blurry", /obj/screen/fullscreen/blurry)
- 			set_fullscreen(druggy, "high", /obj/screen/fullscreen/high)
+		if(blinded)
+			overlay_fullscreen("blind", /obj/screen/fullscreen/blind)
+		else
+			clear_fullscreen("blind")
+			set_fullscreen(disabilities & NEARSIGHTED, "impaired", /obj/screen/fullscreen/impaired, 1)
+			set_fullscreen(eye_blurry, "blurry", /obj/screen/fullscreen/blurry)
+			set_fullscreen(druggy, "high", /obj/screen/fullscreen/high)
 		if (machine)
 			if (!( machine.check_eye(src) ))
 				reset_view(null)

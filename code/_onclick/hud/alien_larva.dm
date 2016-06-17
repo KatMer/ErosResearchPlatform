@@ -28,6 +28,6 @@
 	mymob.fire.screen_loc = ui_fire
 
 	mymob.client.screen = list()
-	mymob.client.screen += list( mymob.healths, mymob.blind, mymob.flash, mymob.fire) //, mymob.rest, mymob.sleep, mymob.mach )
+	mymob.client.screen += list( mymob.healths, mymob.fire) //, mymob.rest, mymob.sleep, mymob.mach )
 	mymob.client.screen += src.adding + src.other
 	mymob.client.screen += mymob.client.void

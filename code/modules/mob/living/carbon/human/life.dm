@@ -32,7 +32,6 @@
 	var/temperature_alert = 0
 	var/in_stasis = 0
 	var/heartbeat = 0
-
 /mob/living/carbon/human/Life()
 	set invisibility = 0
 	set background = BACKGROUND_ENABLED
@@ -1012,7 +1011,6 @@
 	return 1
 
 /mob/living/carbon/human/handle_regular_hud_updates()
-
 	if(hud_updateflag) // update our mob's hud overlays, AKA what others see flaoting above our head
 		handle_hud_list()
 
@@ -1034,37 +1032,38 @@
 	if(damageoverlay.overlays)
 		damageoverlay.overlays = list()
 
-	if(stat == UNCONSCIOUS && health <=0)
+	if(stat == UNCONSCIOUS && health <= 0)
 		//Critical damage passage overlay
 		var/severity = 0
- 		switch(health)
- 			if(-20 to -10)			severity = 1
- 			if(-30 to -20)			severity = 2
- 			if(-40 to -30)			severity = 3
- 			if(-50 to -40)			severity = 4
- 			if(-60 to -50)			severity = 5
- 			if(-70 to -60)			severity = 6
- 			if(-80 to -70)			severity = 7
- 			if(-90 to -80)			severity = 8
- 			if(-95 to -90)			severity = 9
- 			if(-INFINITY to -95)	severity = 10
- 		overlay_fullscreen("crit", /obj/screen/fullscreen/crit, severity)
-  	else
+		switch(health)
+			if(-20 to -10)			severity = 1
+			if(-30 to -20)			severity = 2
+			if(-40 to -30)			severity = 3
+			if(-50 to -40)			severity = 4
+			if(-60 to -50)			severity = 5
+			if(-70 to -60)			severity = 6
+			if(-80 to -70)			severity = 7
+			if(-90 to -80)			severity = 8
+			if(-95 to -90)			severity = 9
+			if(-INFINITY to -95)	severity = 10
+		overlay_fullscreen("crit", /obj/screen/fullscreen/crit, severity)
+	else
 		clear_fullscreen("crit")
 		//Oxygen damage overlay
 		if(oxyloss)
 			var/severity = 0
 			switch(oxyloss)
 				if(10 to 20)		severity = 1
- 				if(20 to 25)		severity = 2
- 				if(25 to 30)		severity = 3
- 				if(30 to 35)		severity = 4
- 				if(35 to 40)		severity = 5
- 				if(40 to 45)		severity = 6
- 				if(45 to INFINITY)	severity = 7
- 			overlay_fullscreen("oxy", /obj/screen/fullscreen/oxy, severity)
- 		else
- 			clear_fullscreen("oxy")
+				if(20 to 25)		severity = 2
+				if(25 to 30)		severity = 3
+				if(30 to 35)		severity = 4
+				if(35 to 40)		severity = 5
+				if(40 to 45)		severity = 6
+				if(45 to INFINITY)	severity = 7
+			overlay_fullscreen("oxy", /obj/screen/fullscreen/oxy, severity)
+		else
+			clear_fullscreen("oxy")
+
 
 		//Fire and Brute damage overlay (BSSR)
 		var/hurtdamage = src.getBruteLoss() + src.getFireLoss() + damageoverlaytemp
@@ -1073,14 +1072,14 @@
 			var/severity = 0
 			switch(hurtdamage)
 				if(10 to 25)		severity = 1
- 				if(25 to 40)		severity = 2
- 				if(40 to 55)		severity = 3
- 				if(55 to 70)		severity = 4
- 				if(70 to 85)		severity = 5
- 				if(85 to INFINITY)	severity = 6
- 			overlay_fullscreen("brute", /obj/screen/fullscreen/brute, severity)
- 		else
- 			clear_fullscreen("brute")
+				if(25 to 40)		severity = 2
+				if(40 to 55)		severity = 3
+				if(55 to 70)		severity = 4
+				if(70 to 85)		severity = 5
+				if(85 to INFINITY)	severity = 6
+			overlay_fullscreen("brute", /obj/screen/fullscreen/brute, severity)
+		else
+			clear_fullscreen("brute")
 
 	if( stat == DEAD )
 		sight |= SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
@@ -1221,9 +1220,6 @@
 						bodytemp.icon_state = "temp-1"
 					else
 						bodytemp.icon_state = "temp0"
-		if(blind)
-			if(blinded)		overlay_fullscreen("blind", /obj/screen/fullscreen/blind)
-			else			clear_fullscreen("blind")
 
 		if(disabilities & NEARSIGHTED)	//this looks meh but saves a lot of memory by not requiring to add var/prescription
 			if(glasses)					//to every /obj/item
