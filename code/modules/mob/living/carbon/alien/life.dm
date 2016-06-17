@@ -83,7 +83,6 @@
 			eye_blurry = max(eye_blurry-1, 0)
 
 		update_icons()
-
 	return 1
 
 /mob/living/carbon/alien/handle_regular_hud_updates()
@@ -124,28 +123,19 @@
 	if (client)
 		client.screen.Remove(global_hud.blurry,global_hud.druggy,global_hud.vimpaired)
 
-	if ((blind && stat != 2))
-		if ((blinded))
-			blind.layer = 18
+	if (stat != DEAD)
+		if (blinded)
+			overlay_fullscreen("blind", /obj/screen/fullscreen/blind)
 		else
-			blind.layer = 0
-			if (disabilities & NEARSIGHTED)
-				client.screen += global_hud.vimpaired
-			if (eye_blurry)
-				client.screen += global_hud.blurry
-			if (druggy)
-				client.screen += global_hud.druggy
-
-	if (stat != 2)
-		if (machine)
-			if ( machine.check_eye(src) < 0)
-				reset_view(null)
-		else
-			if(client && !client.adminobs)
+			clear_fullscreen("blind")
+ 			set_fullscreen(disabilities & NEARSIGHTED, "impaired", /obj/screen/fullscreen/impaired, 1)
+ 			set_fullscreen(eye_blurry, "blurry", /obj/screen/fullscreen/blurry)
+ 			set_fullscreen(druggy, "high", /obj/screen/fullscreen/high)
+ 		if(machine)
+ 			if(machine.check_eye(src) < 0)
 				reset_view(null)
 
 	return 1
-
 /mob/living/carbon/alien/handle_environment(var/datum/gas_mixture/environment)
 	// Both alien subtypes survive in vaccum and suffer in high temperatures,
 	// so I'll just define this once, for both (see radiation comment above)

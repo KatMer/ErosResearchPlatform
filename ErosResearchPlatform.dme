@@ -77,6 +77,7 @@
 #include "code\_onclick\hud\action.dm"
 #include "code\_onclick\hud\ai.dm"
 #include "code\_onclick\hud\alien_larva.dm"
+#include "code\_onclick\hud\fullscreen.dm"
 #include "code\_onclick\hud\gun_mode.dm"
 #include "code\_onclick\hud\hud.dm"
 #include "code\_onclick\hud\human.dm"
