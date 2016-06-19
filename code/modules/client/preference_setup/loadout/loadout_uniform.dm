@@ -338,6 +338,10 @@
 	display_name = "gear harness"
 	path = /obj/item/clothing/under/harness
 
+/datum/gear/uniform/darkholme
+	display_name = "the Darkholme"
+	path = /obj/item/clothing/under/darkholme
+
 /datum/gear/uniform/shortplaindress
 	display_name = "plain dress"
 	path = /obj/item/clothing/under/dress/white3
@@ -369,3 +373,91 @@
 /datum/gear/uniform/whitewedding
 	display_name= "white wedding dress"
 	path = /obj/item/clothing/under/dress/white
+
+/datum/gear/uniform/shizuenormal
+	display_name= "spring outfit"
+	path = /obj/item/clothing/under/shizuenormal
+
+/datum/gear/uniform/shizuewinter
+	display_name= "winter outfit"
+	path = /obj/item/clothing/under/shizuewinter
+
+/datum/gear/uniform/keyholesweater
+	display_name= "keyhole sweater"
+	path = /obj/item/clothing/under/keyholesweater
+
+/datum/gear/uniform/hoodiejeans
+	display_name= "casual hoodie and jeans"
+	path = /obj/item/clothing/under/hoodiejeans
+
+/datum/gear/uniform/hoodieskirt
+	display_name= "casual hoodie and skirt"
+	path = /obj/item/clothing/under/hoodieskirt
+
+/datum/gear/uniform/lolitadress
+	display_name= "lolita dress"
+	path = /obj/item/clothing/under/lolitadress
+
+/datum/gear/uniform/starpilot
+	display_name= "starpilot suit"
+	path = /obj/item/clothing/under/starpilot
+
+/datum/gear/uniform/pinstripe
+	display_name= "pinstriped suit"
+	path =/obj/item/clothing/under/pinstripe
+
+/datum/gear/uniform/colonist1
+	display_name= "colonist clothes"
+	path = /obj/item/clothing/under/colonist/colonist1
+
+/datum/gear/uniform/colonist2
+	display_name= "colonist clothes, alt"
+	path = /obj/item/clothing/under/colonist/colonist2
+
+/datum/gear/uniform/colonist3
+	display_name= "colonist clothes, alt 2"
+	path = /obj/item/clothing/under/colonist/colonist3
+
+/datum/gear/uniform/tenpenny
+	display_name= "red fancy suit"
+	path = /obj/item/clothing/under/tenpenny
+
+/datum/gear/uniform/springm
+	display_name= "springwear clothes"
+	path = /obj/item/clothing/under/springm
+
+/datum/gear/uniform/relaxedwearm
+	display_name= "relaxedwear"
+	path = /obj/item/clothing/under/relaxedwearm
+
+/datum/gear/uniform/springf
+	display_name= "springwear dress"
+	path = /obj/item/clothing/under/springf
+
+/datum/gear/uniform/wasteland
+	display_name= "wasteland fatigues"
+	path = /obj/item/clothing/under/wasteland
+
+/datum/gear/uniform/cowboy_dark
+	display_name= "black cowboy outfit"
+	path = /obj/item/clothing/under/cowboy_dark
+
+/datum/gear/uniform/cowboy
+	display_name= "brown cowboy outfit"
+	path = /obj/item/clothing/under/cowboy
+
+/datum/gear/uniform/seifuku
+	display_name= "delinquent schoolgirl uniform"
+	path = /obj/item/clothing/under/seifuku
+
+/datum/gear/uniform/polkaskirt
+	display_name= "polkadot skirt"
+	path = /obj/item/clothing/under/polkaskirt
+
+/datum/gear/uniform/victoria
+	display_name= "victorian suit"
+	path = /obj/item/clothing/under/victoria
+
+/datum/gear/uniform/girlwinter
+	display_name= "winter girls clothes"
+	path = /obj/item/clothing/under/girlwinter

@@ -65,6 +65,11 @@
 	path = /obj/item/clothing/head/soft/sec/corp
 	allowed_roles = list("Security Officer","Head of Security","Warden", "Detective")
 
+/datum/gear/head/detectivenoir	//from /vg/
+	display_name = "detective noir hat"
+	path = /obj/item/clothing/head/detectivenoir
+	allowed_roles = list("Detective")
+
 /datum/gear/head/cap/green
 	display_name = "cap, green"
 	path = /obj/item/clothing/head/soft/green
@@ -209,3 +214,43 @@
 /datum/gear/head/turban/New()
 	..()
 	gear_tweaks = list(gear_tweak_free_color_choice)
+
+/datum/gear/head/stripedboater
+	display_name = "striped boater"
+	path = /obj/item/clothing/head/boaterhat/striped
+
+/datum/gear/head/pinkpin
+	display_name = "pink hairpin"
+	path = /obj/item/clothing/head/pinkpin
+
+/datum/gear/head/cloverpin
+	display_name = "lucky clover hairpin"
+	path = /obj/item/clothing/head/cloverpin
+
+/datum/gear/head/butterflypin
+	display_name = "butterfly hairpin"
+	path = /obj/item/clothing/head/butterflypin
+
+/datum/gear/head/magnetclips
+	display_name = "magnet hairclips"
+	path = /obj/item/clothing/head/magnetclips
+
+/datum/gear/head/hairribbon
+	display_name = "white hair ribbon"
+	path = /obj/item/clothing/head/hairribbon
+
+/datum/gear/head/hairribbonred
+	display_name = "red hair ribbon"
+	path = /obj/item/clothing/head/hairribbon/red
+
+/datum/gear/head/froghat
+	display_name = "froggie hat"
+	path = /obj/item/clothing/head/froghat
+
+/datum/gear/head/cowboy2
+	display_name = "brown cowboy hat"
+	path = /obj/item/clothing/head/cowboy_hat/cowboy2
+
+/datum/gear/head/lolitahat
+	display_name = "lolita hat"
+	path = /obj/item/clothing/head/lolitahat
