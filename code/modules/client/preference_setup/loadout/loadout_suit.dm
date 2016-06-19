@@ -290,18 +290,6 @@
 	display_name = "cowboy vest, black"
 	path = /obj/item/clothing/suit/storage/cowboydark
 
-/datum/gear/suit/sweater
-	display_name = "sweater selection"
-	path = /obj/item/clothing/suit/sweater
-
-/datum/gear/suit/sweater/New()
-	..()
-	var/list/sweater = list()
-	for(var/sweater_style in typesof(/obj/item/clothing/suit/sweater))
-		var/obj/item/clothing/suit/sweater = sweater_style
-		sweaters[initial(sweater.name)] = sweater
-	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(sweaters))
-
 /datum/gear/suit/puffer_coat
 	display_name = "puffer coat"
 	path = /obj/item/clothing/suit/jacket/puffer

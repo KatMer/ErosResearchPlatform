@@ -408,7 +408,7 @@
 
 /datum/gear/uniform/colonist1
 	display_name= "colonist clothes"
-	path = /obj/item/clothing/under/colonist/colonist1
+	path = /obj/item/clothing/under/colonist
 
 /datum/gear/uniform/colonist2
 	display_name= "colonist clothes, alt"
