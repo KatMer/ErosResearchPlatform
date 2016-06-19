@@ -12,7 +12,7 @@
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
-	alt_titles = list("Barista")
+	alt_titles = list("Barista","Mixologist","Barkeep","Barmaid")
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -42,7 +42,7 @@
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_kitchen)
-	alt_titles = list("Cook")
+	alt_titles = list("Cook","Sous Chef","Culinary Artist","Baker","Waiter","Waitress")
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -70,7 +70,7 @@
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_hydroponics)
-	alt_titles = list("Hydroponicist")
+	alt_titles = list("Hydroponicist","Botanist","Farmer","Agriculturalist")
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -162,7 +162,7 @@
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
-	alt_titles = list("Drill Technician","Prospector")
+	alt_titles = list("Drill Technician","Prospector","Miner")
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -201,14 +201,20 @@
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_janitor, access_maint_tunnels)
 	minimal_access = list(access_janitor, access_maint_tunnels)
-	alt_titles = list("Custodian")
-
+	ideal_character_age = 70  // Same as captain :^) ,
+	alt_titles = list("Custodian","Maid","Servant")
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service(H), slot_l_ear)
-		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/janitor(H), slot_w_uniform)
-		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
+		if(has_alt_title(H, alt_title,"Maid"))
+			H.equip_to_slot_or_del(new /obj/item/clothing/under/dress/maid(H), slot_w_uniform)
+			H.equip_to_slot_or_del(new /obj/item/clothing/suit/maidapron(H), slot_wear_suit)
+			H.equip_to_slot_or_del(new /obj/item/clothing/shoes/kneesocks(H), slot_shoes)
+			H.equip_to_slot_or_del(new /obj/item/clothing/head/maidhat(H), slot_head)
+		else
+			H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/janitor(H), slot_w_uniform)
+			H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
 		H.equip_to_slot_or_del(new /obj/item/device/pda/janitor(H), slot_belt)
 		return 1
 
@@ -228,7 +234,7 @@
 	idtype = /obj/item/weapon/card/id/civilian
 	access = list(access_library, access_maint_tunnels)
 	minimal_access = list(access_library)
-	alt_titles = list("Journalist")
+	alt_titles = list("Journalist","Writer","Bookkeeper","Curator","Archivist","Author")
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -256,6 +262,7 @@
 	economic_modifier = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_heads)
 	minimal_access = list(access_lawyer, access_sec_doors, access_heads)
+	alt_titles = list("Lawyer","Attorney")
 
 
 	equip(var/mob/living/carbon/human/H)
