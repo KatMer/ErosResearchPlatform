@@ -204,7 +204,7 @@
 	ideal_character_age = 70  // Same as captain :^) ,
 	alt_titles = list("Custodian","Maid","Servant")
 
-	equip(var/mob/living/carbon/human/H)
+	equip(var/mob/living/carbon/human/H, var/alt_title)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service(H), slot_l_ear)
 		if(has_alt_title(H, alt_title,"Maid"))
