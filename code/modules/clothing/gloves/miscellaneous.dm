@@ -51,3 +51,9 @@
 	item_state = "ggloves"
 	permeability_coefficient = 0.05
 	siemens_coefficient = 0.50 //thick work gloves
+
+/obj/item/clothing/gloves/fingerless
+	desc = "Fingerless black gloves, designed for cool."
+	name = "fingerless gloves"
+	icon_state = "eros_fingerlessgloves"
+	item_state = "eros_fingerlessgloves"

@@ -321,7 +321,7 @@
 
 /obj/item/clothing/under/dress/janimaid
 	name = "maid uniform"
-	desc = "A simple maid uniform for housekeeping."
+	desc = "Usually seen on their knees."
 	icon_state = "janimaid"
 	item_state = "janimaid"
 	worn_state = "janimaid"
@@ -645,3 +645,188 @@
 	icon_state = "darkreddress"
 	item_state = "darkreddress"
 	worn_state = "darkreddress"
+
+/obj/item/clothing/under/girlwinter
+	name = "winter girls clothes"
+	desc = "Might be a bit breezy."
+	icon_state = "eros_girlwinter"
+	worn_state = "eros_girlwinter"
+
+/obj/item/clothing/under/polkaskirt
+	name = "polkadot skirt"
+	desc = "Cheery dots on white."
+	icon_state = "eros_polkaskirt"
+	worn_state = "eros_polkaskirt"
+
+/obj/item/clothing/under/victoria
+	name = "victorian suit"
+	desc = "A fancy victorian-style suit."
+	icon_state = "eros_victoria"
+	worn_state = "eros_victoria"
+
+/obj/item/clothing/under/seifuku
+	name = "delinquent schoolgirl uniform"
+	desc = "It's a schoolgirl's uniform, but, with a little edge."
+	icon_state = "eros_seifuku"
+	worn_state = "eros_seifuku"
+
+/obj/item/clothing/under/cowboy
+	name = "brown cowboy outfit"
+	desc = "Throwbacks to the wild west are popular in the unexpored frontiers of space."
+	icon_state = "eros_cowboy"
+	worn_state = "eros_cowboy"
+
+/obj/item/clothing/under/cowboy_dark
+	name = "black cowboy outfit"
+	desc = "Throwbacks to the wild west are popular in the unexpored frontiers of space."
+	icon_state = "eros_cowboy_dark"
+	worn_state = "eros_cowboy_dark"
+
+/obj/item/clothing/under/wasteland
+	name = "wasteland fatigues"
+	desc = "An outfit like this might be oddly suitable for the apocalypse."
+	icon_state = "eros_wasteland"
+	worn_state = "eros_wasteland"
+
+/obj/item/clothing/under/springf
+	name = "springwear dress"
+	desc = "An antique 1950's-style dress.. What's old is new...?"
+	icon_state = "eros_springf"
+	worn_state = "eros_springf"
+
+/obj/item/clothing/under/relaxedwearm
+	name = "relaxedwear"
+	desc = "I couldn't feel any better, or I'd be dead."
+	icon_state = "eros_relaxedwearm"
+	worn_state = "eros_relaxedwearm"
+
+/obj/item/clothing/under/springm
+	name = "springwear clothes"
+	desc = "I've sunshine enough to spread."
+	icon_state = "eros_springm"
+	worn_state = "eros_springm"
+
+/obj/item/clothing/under/pinstripe
+	name = "pinstriped suit"
+	desc = "Ain't that a kick in the head?"
+	icon_state = "eros_pinstripe"
+	worn_state = "eros_pinstripe"
+
+/obj/item/clothing/under/consul
+	name = "consul clothes"
+	icon_state = "eros_consul"
+	worn_state = "eros_consul"
+
+/obj/item/clothing/under/duke
+	name = "duke duds"
+	icon_state = "eros_duke"
+	worn_state = "eros_duke"
+
+/obj/item/clothing/under/colonist
+	name = "colonist clothes"
+	desc = "Sturdy, sensible clothes, common among more recently settled colonies."
+	icon_state = "eros_colonist"
+	worn_state = "eros_colonist"
+
+/obj/item/clothing/under/colonist/colonist2
+	name = "colonist clothes"
+	desc = "Sturdy, sensible clothes, common among more recently settled colonies."
+	icon_state = "eros_colonist2"
+	worn_state = "eros_colonist2"
+
+/obj/item/clothing/under/colonist/colonist3
+	name = "colonist clothes"
+	desc = "Sturdy, sensible clothes, common among more recently settled colonies."
+	icon_state = "eros_colonist3"
+	worn_state = "eros_colonist3"
+
+/obj/item/clothing/under/tenpenny
+	name = "red fancy suit"
+	icon_state = "eros_tenpenny"
+	worn_state = "eros_tenpenny"
+
+/obj/item/clothing/under/starpilot
+	name = "starpilot suit"
+	desc = "It's an old replica pilot suit."
+	icon_state = "eros_starpilot"
+	worn_state = "eros_starpilot"
+
+/obj/item/clothing/under/jester
+	name = "jester clothes"
+	icon_state = "eros_jester"
+	worn_state = "eros_jester"
+
+/obj/item/clothing/under/darkholme
+	name = "\improper The Darkholme"
+	desc = "Fuck you."
+	icon_state = "eros_darkholme"
+	worn_state = "eros_darkholme"
+
+/obj/item/clothing/under/cia
+	name = "cia"
+	desc = "Words here."
+	icon_state = "eros_cia"
+	worn_state = "eros_cia"
+
+/obj/item/clothing/under/shizuewinter
+	name = "winter outfit"
+	desc = "Perfect for winter!"
+	icon_state = "eros_shizuewinter"
+	worn_state = "eros_shizuewinter"
+
+/obj/item/clothing/under/shizuenormal
+	name = "spring outfit"
+	desc = "Perfect for spring!"
+	icon_state = "eros_shizuenormal"
+	worn_state = "eros_shizuenormal"
+
+/obj/item/clothing/under/keyholesweater
+	name = "keyhole sweater"
+	desc = "What is the point of this, anyway?"
+	icon_state = "eros_keyholesweater"
+	worn_state = "eros_keyholesweater"
+
+/obj/item/clothing/under/hoodiejeans
+	name = "casual hoodie and jeans"
+	desc = "Perfect for lounging about in."
+	icon_state = "eros_hoodiejeans"
+	worn_state = "eros_hoodiejeans"
+
+/obj/item/clothing/under/hoodieskirt
+	name = "casual hoodie and skirt"
+	desc = "Perfect for lounging about in."
+	icon_state = "eros_hoodieskirt"
+	worn_state = "eros_hoodieskirt"
+
+/obj/item/clothing/under/lolitadress
+	name = "lolita dress"
+	icon_state = "eros_lolitadress"
+	worn_state = "eros_lolitadress"
+
+/obj/item/clothing/under/greaser
+	name = "greaser outfit"
+	desc = "The one that you want!"
+	icon_state = "eros_greaser_default"
+	worn_state = "eros_greaser_default"
+	siemens_coefficient = 0.75
+
+/obj/item/clothing/under/greaser/cult
+	name = "cultist greaser outfit"
+	desc = "The one that you want!"
+	icon_state = "eros_greaser_cult"
+	worn_state = "eros_greaser_cult"
+	siemens_coefficient = 0.75
+
+/obj/item/clothing/under/greaser/spider
+	name = "spider greaser outfit"
+	desc = "The one that you want!"
+	icon_state = "eros_greaser_spider"
+	worn_state = "eros_greaser_spider"
+	siemens_coefficient = 0.75
+
+/obj/item/clothing/under/greaser/snake
+	name = "snakes greaser outfit"
+	desc = "Tunnel Snakes Rule!"
+	icon_state = "eros_greaser_snakes"
+	worn_state = "eros_greaser_snakes"
+	siemens_coefficient = 0.75
