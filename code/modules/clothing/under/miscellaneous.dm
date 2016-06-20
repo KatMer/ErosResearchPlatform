@@ -725,8 +725,8 @@
 /obj/item/clothing/under/colonist
 	name = "colonist clothes"
 	desc = "Sturdy, sensible clothes, common among more recently settled colonies."
-	icon_state = "eros_colonist"
-	worn_state = "eros_colonist"
+	icon_state = "eros_colonist1"
+	worn_state = "eros_colonist1"
 
 /obj/item/clothing/under/colonist/colonist2
 	name = "colonist clothes"
@@ -797,11 +797,6 @@
 	desc = "Perfect for lounging about in."
 	icon_state = "eros_hoodieskirt"
 	worn_state = "eros_hoodieskirt"
-
-/obj/item/clothing/under/lolitadress
-	name = "lolita dress"
-	icon_state = "eros_lolitadress"
-	worn_state = "eros_lolitadress"
 
 /obj/item/clothing/under/greaser
 	name = "greaser outfit"

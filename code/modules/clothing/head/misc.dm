@@ -349,7 +349,7 @@
 
 /obj/item/clothing/head/cowboy_hat/cowboy2
 	name = "brown cowboy hat"
-	icon_state = "eros_brown"
+	icon_state = "eros_cowboyhat"
 
 /obj/item/clothing/head/detectivenoir
 	name = "detective noir hat"

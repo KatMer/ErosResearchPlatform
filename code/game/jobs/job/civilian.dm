@@ -210,7 +210,7 @@
 		if(has_alt_title(H, alt_title,"Maid"))
 			H.equip_to_slot_or_del(new /obj/item/clothing/under/dress/maid(H), slot_w_uniform)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/maidapron(H), slot_wear_suit)
-			H.equip_to_slot_or_del(new /obj/item/clothing/shoes/kneesocks(H), slot_shoes)
+			H.equip_to_slot_or_del(new /obj/item/clothing/shoes/flats(H), slot_shoes)
 			H.equip_to_slot_or_del(new /obj/item/clothing/head/maidhat(H), slot_head)
 		else
 			H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/janitor(H), slot_w_uniform)

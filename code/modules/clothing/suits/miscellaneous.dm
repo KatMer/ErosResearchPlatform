@@ -814,3 +814,8 @@
 	name = "cat kigurumi"
 	icon_state = "eros_kigucat"
 	item_state = "eros_kigucat"
+
+/obj/item/clothing/suit/lolitadress
+	name = "lolita dress"
+	icon_state = "eros_lolitadress"
+	item_state = "eros_lolitadress"

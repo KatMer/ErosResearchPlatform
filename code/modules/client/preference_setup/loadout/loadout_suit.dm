@@ -305,3 +305,7 @@
 /datum/gear/suit/puffer_coat
 	display_name = "puffer coat"
 	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/lolitadress
+	display_name = "lolita dress"
+	path = /obj/item/clothing/suit/lolitadress

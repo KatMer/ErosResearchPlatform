@@ -394,10 +394,6 @@
 	display_name= "casual hoodie and skirt"
 	path = /obj/item/clothing/under/hoodieskirt
 
-/datum/gear/uniform/lolitadress
-	display_name= "lolita dress"
-	path = /obj/item/clothing/under/lolitadress
-
 /datum/gear/uniform/starpilot
 	display_name= "starpilot suit"
 	path = /obj/item/clothing/under/starpilot
