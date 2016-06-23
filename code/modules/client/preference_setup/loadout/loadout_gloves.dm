@@ -49,3 +49,7 @@
 /datum/gear/gloves/white
 	display_name = "gloves, white"
 	path = /obj/item/clothing/gloves/white
+
+/datum/gear/gloves/fingerless
+	display_name = "gloves, fingerless"
+	path = /obj/item/clothing/gloves/fingerless

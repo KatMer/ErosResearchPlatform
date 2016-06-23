@@ -149,15 +149,16 @@ var/list/ai_verbs_hidden = list( // For why this exists, refer to https://xkcd.c
 	//Languages
 	add_language("Robot Talk", 1)
 	add_language("Galactic Common", 1)
-	add_language("Sol Common", 0)
-	add_language("Sinta'unathi", 0)
-	add_language("Siik'maas", 0)
-	add_language("Siik'tajr", 0)
-	add_language("Skrellian", 0)
+	add_language("Sol Common", 1)
+	add_language("Sinta'unathi", 1)
+	add_language("Siik'maas", 1)
+	add_language("Siik'tajr", 1)
+	add_language("Skrellian", 1)
 	add_language("Tradeband", 1)
-	add_language("Gutter", 0)
+	add_language("Gutter", 1)
 	add_language("Encoded Audio Language", 1)
-	add_language("Schechi", 0)
+	add_language("Schechi", 1)
+	add_language("Sehlin", 1)
 
 	if(!safety)//Only used by AIize() to successfully spawn an AI.
 		if (!B)//If there is no player/brain inside.
@@ -564,8 +565,14 @@ var/list/ai_verbs_hidden = list( // For why this exists, refer to https://xkcd.c
 	else
 		var/icon_list[] = list(
 		"default",
+		"male",
 		"floating face",
-		"carp"
+		"xenomorph",
+		"carp",
+		"SHODAN",
+		"spooky",
+		"cat",
+		"lazy kitten"
 		)
 		input = input("Please select a hologram:") as null|anything in icon_list
 		if(input)
@@ -573,10 +580,22 @@ var/list/ai_verbs_hidden = list( // For why this exists, refer to https://xkcd.c
 			switch(input)
 				if("default")
 					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo1"))
+				if("male")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo6"))
 				if("floating face")
 					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo2"))
+				if("xenomorph")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo3"))
 				if("carp")
 					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo4"))
+				if("SHODAN")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo5"))
+				if("spooky")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo7"))
+				if("cat")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo8"))
+				if("lazy kitten")
+					holo_icon = getHologramIcon(icon('icons/mob/AI.dmi',"holo9"))
 	return
 
 //Toggles the luminosity and applies it by re-entereing the camera.

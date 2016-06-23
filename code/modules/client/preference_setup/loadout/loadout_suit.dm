@@ -150,6 +150,11 @@
 	path = /obj/item/clothing/suit/poncho/roles/cargo
 	allowed_roles = list("Quartermaster","Cargo Technician")
 
+/datum/gear/suit/roles/noirdetective
+	display_name = "poncho, cargo"
+	path = /obj/item/clothing/suit/storage/noirdetective
+	allowed_roles = list("Detective")
+
 /datum/gear/suit/unathi_robe
 	display_name = "roughspun robe"
 	path = /obj/item/clothing/suit/unathi/robe
@@ -268,3 +273,39 @@
 		var/obj/item/clothing/suit/storage/toggle/track/track = track_style
 		tracks[initial(track.name)] = track
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(tracks))
+
+/datum/gear/suit/puffer_coat
+	display_name = "puffer coat"
+	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/colonel
+	display_name = "colonels jacket"
+	path = /obj/item/clothing/suit/storage/colonel
+
+/datum/gear/suit/cowboy
+	display_name = "cowboy vest, brown"
+	path = /obj/item/clothing/suit/storage/cowboy
+
+/datum/gear/suit/cowboy2
+	display_name = "cowboy vest, black"
+	path = /obj/item/clothing/suit/storage/cowboydark
+
+/datum/gear/suit/puffer_coat
+	display_name = "puffer coat"
+	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/puffer_coat
+	display_name = "puffer coat"
+	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/puffer_coat
+	display_name = "puffer coat"
+	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/puffer_coat
+	display_name = "puffer coat"
+	path = /obj/item/clothing/suit/jacket/puffer
+
+/datum/gear/suit/lolitadress
+	display_name = "lolita dress"
+	path = /obj/item/clothing/suit/lolitadress

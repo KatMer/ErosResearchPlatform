@@ -60,3 +60,11 @@
 	display_name = "sunglasses, presciption (Security/Command)"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
 	cost = 2
+
+/datum/gear/eyes/shades/shutters
+	display_name = "shutter shades"
+	path = /obj/item/clothing/glasses/shutters
+
+/datum/gear/eyes/shades/redglasses
+	display_name = "classy red glasses"
+	path = /obj/item/clothing/glasses/redglasses

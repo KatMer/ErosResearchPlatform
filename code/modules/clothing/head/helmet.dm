@@ -142,3 +142,29 @@
 	name = "emergency response team medical helmet"
 	desc = "A set of armor worn by medical members of the NanoTrasen Emergency Response Team. Has red and white highlights."
 	icon_state = "erthelmet_med"
+
+//Knight Helms
+/obj/item/clothing/head/helmet/knight
+	name = "green medieval helmet"
+	desc = "A classic knight's helmet. This one has a green motif."
+	icon_state = "eros_knight_green"
+
+/obj/item/clothing/head/helmet/knight/red
+	name = "red medieval helmet"
+	desc = "A classic knight's helmet. This one has a red motif."
+	icon_state = "eros_knight_red"
+
+/obj/item/clothing/head/helmet/knight/yellow
+	name = "yellow medieval helmet"
+	desc = "A classic knight's helmet. This one has a yellow motif."
+	icon_state = "eros_knight_yellow"
+
+/obj/item/clothing/head/helmet/knight/blue
+	name = "blue medieval helmet"
+	desc = "A classic knight's helmet. This one has a blue motif."
+	icon_state = "eros_knight_blue"
+
+/obj/item/clothing/head/helmet/knight/templar
+	name = "crusader helmet"
+	desc = "Deus Vult."
+	icon_state = "eros_knight_templar"

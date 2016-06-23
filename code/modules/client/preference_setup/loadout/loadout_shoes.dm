@@ -96,3 +96,27 @@
 /datum/gear/shoes/flats/white
 	display_name = "flats, white"
 	path = /obj/item/clothing/shoes/flats/white
+
+/datum/gear/shoes/kneesocks
+	display_name = "kneesocks"
+	path = /obj/item/clothing/shoes/kneesocks
+
+/datum/gear/shoes/aviatorboots
+	display_name = "aviator boots"
+	path = /obj/item/clothing/shoes/aviatorboots
+
+/datum/gear/shoes/tourist
+	display_name = "tourist sandals"
+	path = /obj/item/clothing/shoes/tourist
+
+/datum/gear/shoes/lolitastockings
+	display_name = "lolita stockings"
+	path = /obj/item/clothing/shoes/lolitastockings
+
+/datum/gear/shoes/sneakers
+	display_name = "sneakers"
+	path = /obj/item/clothing/shoes/sneakers
+
+/datum/gear/shoes/laces
+	display_name = "lace sandals"
+	path = /obj/item/clothing/shoes/laces

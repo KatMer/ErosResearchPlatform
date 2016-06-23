@@ -1233,3 +1233,12 @@
 	tal_deer
 		name = "Deer Tail"		// Citadel
 		icon_state = "deer"
+
+	tal_demon
+		name = "Demon Tail"
+		icon_state = "demon_c"
+
+	tal_demon_c
+		name = "Demon Tail, Red"
+		icon_state = "demon"
+		do_colouration = 0
