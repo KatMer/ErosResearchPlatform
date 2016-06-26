@@ -5114,7 +5114,7 @@
 "bUr" = (/obj/effect/floor_decal/corner/pink/full,/obj/machinery/computer/med_data/laptop,/obj/structure/table/glass,/obj/machinery/light,/obj/item/device/radio/intercom{dir = 8; name = "Station Intercom (General)"; pixel_x = -21},/turf/simulated/floor/tiled/white,/area/medical/patient_c)
 "bUs" = (/obj/effect/floor_decal/corner/pink{dir = 10},/obj/structure/table/glass,/obj/item/weapon/paper_bin,/obj/item/weapon/clipboard,/obj/item/weapon/pen,/turf/simulated/floor/tiled/white,/area/medical/patient_c)
 "bUt" = (/obj/effect/floor_decal/corner/pink{dir = 10},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/floor/tiled/white,/area/medical/patient_c)
-"bUu" = (/obj/effect/floor_decal/corner/pink{dir = 8},/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
+"bUu" = (/obj/effect/floor_decal/corner/pink{dir = 8},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
 "bUv" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/corner/pink,/turf/simulated/floor/tiled/white,/area/medical/patient_wing)
 "bUw" = (/obj/effect/floor_decal/corner/pink{dir = 10},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/floor/tiled/white,/area/medical/patient_b)
 "bUx" = (/obj/effect/floor_decal/corner/pink{dir = 10},/obj/structure/table/glass,/obj/item/weapon/paper_bin,/obj/item/weapon/clipboard,/obj/item/weapon/pen,/turf/simulated/floor/tiled/white,/area/medical/patient_b)

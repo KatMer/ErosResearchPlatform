@@ -797,8 +797,8 @@
 /obj/item/clothing/suit/kigu
 	name = "kigurumi"
 	desc = "Cute and warm, good for naps and lazing around."
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS|BLOCKHAIR|HIDEEARS
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS|HIDEEARS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL|BLOCKHEADHAIR
 
 /obj/item/clothing/suit/kigu/bear
 	name = "bear kigurumi"
