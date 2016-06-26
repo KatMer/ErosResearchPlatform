@@ -109,17 +109,17 @@ Please contact me on #coderbus IRC. ~Carn x
 #define MUTATIONS_LAYER			1
 #define DAMAGE_LAYER			2
 #define SURGERY_LEVEL			3		//bs12 specific.
-#define UNDERWEAR_LAYER  		4
-#define UNIFORM_LAYER			5
-#define ID_LAYER				6
-#define SHOES_LAYER				7
-#define GLOVES_LAYER			8
-#define BELT_LAYER				9
-#define SUIT_LAYER				10
-#define ORGAN_OVERLAY_LAYER		11		//for any organs that are bigger than a standard human (Blend() crops images)
-#define TAIL_LAYER				12		//bs12 specific. this hack is probably gonna come back to haunt me
-#define WINGS_LAYER				13
-#define GENITALS_LAYER			14
+#define UNDERWEAR_LAYER 		4
+#define TAIL_LAYER				5		//bs12 specific. this hack is probably gonna come back to haunt me
+#define GENITALS_LAYER			6		//eros specific.
+#define UNIFORM_LAYER			7
+#define ID_LAYER				8
+#define SHOES_LAYER				9
+#define GLOVES_LAYER			10
+#define BELT_LAYER				11
+#define SUIT_LAYER				12
+#define ORGAN_OVERLAY_LAYER		13		//for any organs that are bigger than a standard human (Blend() crops images)
+#define WINGS_LAYER				14		//eros specific.
 #define GLASSES_LAYER			15
 #define BELT_LAYER_ALT			16
 #define SUIT_STORE_LAYER		17
@@ -1050,24 +1050,41 @@ var/global/list/damage_icon_parts = list()
 		var/datum/sprite_accessory/vaginas = body_vaginas_list[v_type]
 		var/datum/sprite_accessory/dicks = body_dicks_list[d_type]
 		var/icon/genitals_standing	=new /icon('icons/mob/human_face.dmi',"bald_s") //blank icon by excelency
-		if(breasts && breasts.species_allowed && (src.species.get_bodytype() in breasts.species_allowed))
-			if(!(w_uniform && (w_uniform.body_parts_covered & UPPER_TORSO)) && !(wear_suit && (wear_suit.body_parts_covered & UPPER_TORSO)))
-				var/icon/breasts_s = new/icon("icon" = breasts.icon, "icon_state" = breasts.icon_state)
-				if(breasts.do_colouration)
-					breasts_s.Blend(rgb(r_skin, g_skin, b_skin), ICON_MULTIPLY)
-				genitals_standing.Blend(breasts_s, ICON_OVERLAY)
-		if(vaginas && vaginas.species_allowed && (src.species.get_bodytype() in vaginas.species_allowed))
-			if(!(w_uniform && (w_uniform.body_parts_covered & LOWER_TORSO)) && !(wear_suit && (wear_suit.body_parts_covered & LOWER_TORSO)))
-				var/icon/vaginas_s = new/icon("icon" = vaginas.icon, "icon_state" = vaginas.icon_state)
-				if(vaginas.do_colouration)
-					vaginas_s.Blend(rgb(r_genital, g_genital, b_genital), ICON_MULTIPLY)
-				genitals_standing.Blend(vaginas_s, ICON_OVERLAY)
-		if(dicks && dicks.species_allowed && (src.species.get_bodytype() in dicks.species_allowed))
-			if(!(w_uniform && (w_uniform.body_parts_covered & LOWER_TORSO)) && !(wear_suit && (wear_suit.body_parts_covered & LOWER_TORSO)))
-				var/icon/dicks_s = new/icon("icon" = dicks.icon, "icon_state" = dicks.icon_state)
-				if(dicks.do_colouration)
-					dicks_s.Blend(rgb(r_genital, g_genital, b_genital), ICON_MULTIPLY)
-				genitals_standing.Blend(dicks_s, ICON_OVERLAY)
+		var/draw_boobs = 1
+		var/draw_genitals = 1
+		var/obj/item/clothing/suit/esuit
+		var/obj/item/clothing/under/euniform
+		if(istype(w_uniform, /obj/item/clothing/under))
+			euniform = w_uniform
+		if(istype(wear_suit, /obj/item/clothing/suit))
+			esuit = wear_suit
+		for(var/undies in all_underwear)
+			if(istype(all_underwear[undies], /datum/category_item/underwear))
+				var/datum/category_item/underwear/eunde = all_underwear[undies]
+				if (!(eunde.show_boobs))
+					draw_boobs = 0
+				if (!(eunde.show_genitals))
+					draw_genitals = 0
+		if (draw_boobs)
+			if(breasts && breasts.species_allowed && (src.species.get_bodytype() in breasts.species_allowed))
+				if(!(w_uniform && !(euniform.show_boobs)) && !(wear_suit && !(esuit.show_boobs)))
+					var/icon/breasts_s = new/icon("icon" = breasts.icon, "icon_state" = breasts.icon_state)
+					if(breasts.do_colouration)
+						breasts_s.Blend(rgb(r_skin, g_skin, b_skin), ICON_MULTIPLY)
+					genitals_standing.Blend(breasts_s, ICON_OVERLAY)
+		if (draw_genitals)
+			if(vaginas && vaginas.species_allowed && (src.species.get_bodytype() in vaginas.species_allowed))
+				if(!(w_uniform && !(euniform.show_genitals)) && !(wear_suit && !(esuit.show_genitals)))
+					var/icon/vaginas_s = new/icon("icon" = vaginas.icon, "icon_state" = vaginas.icon_state)
+					if(vaginas.do_colouration)
+						vaginas_s.Blend(rgb(r_genital, g_genital, b_genital), ICON_MULTIPLY)
+					genitals_standing.Blend(vaginas_s, ICON_OVERLAY)
+			if(dicks && dicks.species_allowed && (src.species.get_bodytype() in dicks.species_allowed))
+				if(!(w_uniform && !(euniform.show_genitals)) && !(wear_suit && !(esuit.show_genitals)))
+					var/icon/dicks_s = new/icon("icon" = dicks.icon, "icon_state" = dicks.icon_state)
+					if(dicks.do_colouration)
+						dicks_s.Blend(rgb(r_genital, g_genital, b_genital), ICON_MULTIPLY)
+					genitals_standing.Blend(dicks_s, ICON_OVERLAY)
 		overlays_standing[GENITALS_LAYER] = image(genitals_standing)
 	if(update_icons)
 		update_icons()

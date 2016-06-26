@@ -1,5 +1,7 @@
 /obj/item/clothing/suit/storage
 	var/obj/item/weapon/storage/internal/pockets
+	show_genitals = 1
+	show_boobs = 1
 
 /obj/item/clothing/suit/storage/New()
 	..()
@@ -41,9 +43,11 @@
 
 		if(icon_state == icon_open) //Will check whether icon state is currently set to the "open" or "closed" state and switch it around with a message to the user
 			icon_state = icon_closed
+			show_boobs = 0
 			usr << "You button up the coat."
 		else if(icon_state == icon_closed)
 			icon_state = icon_open
+			show_boobs = 1
 			usr << "You unbutton the coat."
 		else //in case some goofy admin switches icon states around without switching the icon_open or icon_closed
 			usr << "You attempt to button-up the velcro on your [src], before promptly realising how silly you are."
@@ -62,9 +66,11 @@
 
 		if(icon_state == icon_open) //Will check whether icon state is currently set to the "open" or "closed" state and switch it around with a message to the user
 			icon_state = icon_closed
+			show_boobs = 0
 			usr << "You button up the coat."
 		else if(icon_state == icon_closed)
 			icon_state = icon_open
+			show_boobs = 1
 			usr << "You unbutton the coat."
 		else //in case some goofy admin switches icon states around without switching the icon_open or icon_closed
 			usr << "You attempt to button-up the velcro on your [src], before promptly realising how silly you are."
