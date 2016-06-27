@@ -414,7 +414,12 @@ datum/preferences
 		character.update_body(0)
 		character.update_underwear(0)
 		character.update_hair(0)
+		character.update_genitals_showing(0)
+		character.update_wings(0)
+		character.update_ears(0)
+		character.update_collar(0)
 		character.update_icons()
+
 
 /datum/preferences/proc/open_load_dialog(mob/user)
 	var/dat = "<body>"
