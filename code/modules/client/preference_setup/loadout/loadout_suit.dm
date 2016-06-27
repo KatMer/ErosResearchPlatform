@@ -151,7 +151,7 @@
 	allowed_roles = list("Quartermaster","Cargo Technician")
 
 /datum/gear/suit/roles/noirdetective
-	display_name = "poncho, cargo"
+	display_name = "noir detective coat"
 	path = /obj/item/clothing/suit/storage/noirdetective
 	allowed_roles = list("Detective")
 
@@ -289,22 +289,6 @@
 /datum/gear/suit/cowboy2
 	display_name = "cowboy vest, black"
 	path = /obj/item/clothing/suit/storage/cowboydark
-
-/datum/gear/suit/puffer_coat
-	display_name = "puffer coat"
-	path = /obj/item/clothing/suit/jacket/puffer
-
-/datum/gear/suit/puffer_coat
-	display_name = "puffer coat"
-	path = /obj/item/clothing/suit/jacket/puffer
-
-/datum/gear/suit/puffer_coat
-	display_name = "puffer coat"
-	path = /obj/item/clothing/suit/jacket/puffer
-
-/datum/gear/suit/puffer_coat
-	display_name = "puffer coat"
-	path = /obj/item/clothing/suit/jacket/puffer
 
 /datum/gear/suit/lolitadress
 	display_name = "lolita dress"
