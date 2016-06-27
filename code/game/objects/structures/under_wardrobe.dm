@@ -84,4 +84,5 @@
 
 	if(.)
 		H.update_underwear()
+		H.update_genitals_showing()
 		interact(H)
