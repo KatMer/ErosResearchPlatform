@@ -120,3 +120,7 @@
 /datum/gear/shoes/laces
 	display_name = "lace sandals"
 	path = /obj/item/clothing/shoes/laces
+
+/datum/gear/shoes/laces
+	display_name = "cowboy boots"
+	path = /obj/item/clothing/shoes/cowboy
