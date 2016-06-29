@@ -25,7 +25,7 @@
 		var/obj/item/clothing/ears/skrell/chain/chain = chain_style
 		chaintypes[initial(chain.name)] = chain
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(chaintypes))
-	
+
 /datum/gear/ears/skrell/bands
 	display_name = "headtail band selection (Skrell)"
 	path = /obj/item/clothing/ears/skrell/band
@@ -39,7 +39,7 @@
 		var/obj/item/clothing/ears/skrell/band/band = band_style
 		bandtypes[initial(band.name)] = band
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(bandtypes))
-	
+
 /datum/gear/ears/skrell/cloth/male
 	display_name = "male headtail cloth selection (Skrell)"
 	path = /obj/item/clothing/ears/skrell/cloth_male
@@ -73,17 +73,17 @@
 	path = /obj/item/clothing/ears/skrell/colored/band
 	sort_category = "Xenowear"
 	whitelisted = "Skrell"
-	
+
 /datum/gear/ears/skrell/colored/band/New()
 	..()
 	gear_tweaks = list(gear_tweak_free_color_choice)
-	
+
 /datum/gear/ears/skrell/colored/chain
 	display_name = "Colored chain (Skrell)"
 	path = /obj/item/clothing/ears/skrell/colored/chain
 	sort_category = "Xenowear"
 	whitelisted = "Skrell"
-	
+
 /datum/gear/ears/skrell/colored/chain/New()
 	..()
 	gear_tweaks = list(gear_tweak_free_color_choice)
@@ -117,9 +117,4 @@
 /datum/gear/mask/ipc_monitor
 	display_name = "display monitor (Full Body Prosthetic)"
 	path = /obj/item/clothing/mask/monitor
-	sort_category = "Xenowear"
-
-/datum/gear/uniform/harness
-	display_name = "gear harness (Full Body Prosthetic, Diona)"
-	path = /obj/item/clothing/under/harness
 	sort_category = "Xenowear"

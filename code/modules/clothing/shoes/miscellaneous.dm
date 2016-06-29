@@ -244,3 +244,9 @@
 	desc = ""
 	icon_state = "eros_laces"
 	item_state = "eros_laces"
+
+/obj/item/clothing/shoes/cowboy
+	name = "cowboy boots"
+	desc = "Not a lot of horses to ride in space."
+	icon_state = "cowboy"
+	item_state = "cowboy"

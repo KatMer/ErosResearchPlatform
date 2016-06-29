@@ -359,3 +359,7 @@
 /obj/item/clothing/head/lolitahat
 	name = "lolita hat"
 	icon_state = "eros_lolitahat"
+
+/obj/item/clothing/head/techassist
+	name = "technical assistant cap"
+	icon_state = "eros_assistenghat"
