@@ -790,6 +790,7 @@
 
 	glass_name = "Brown Star"
 	glass_desc = "It's not what it sounds like..."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/milkshake
 	name = "Milkshake"
@@ -831,6 +832,7 @@
 
 	glass_name = "Rewriter"
 	glass_desc = "The secret of the sanctuary of the Libarian..."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/rewriter/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
@@ -901,6 +903,7 @@
 
 	glass_name = "Dr. Gibb"
 	glass_desc = "Dr. Gibb. Not as dangerous as the name might imply."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/soda/space_up
 	name = "Space-Up"
@@ -1445,6 +1448,7 @@
 
 	glass_name = "Cuba Libre"
 	glass_desc = "A classic mix of rum and cola."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/demonsblood
 	name = "Demons Blood"
@@ -1455,6 +1459,7 @@
 
 	glass_name = "Demons' Blood"
 	glass_desc = "Just looking at this thing makes the hair at the back of your neck stand up."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/devilskiss
 	name = "Devils Kiss"
@@ -1486,6 +1491,7 @@
 
 	glass_name = "gin fizz"
 	glass_desc = "Refreshingly lemony, deliciously dry."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/grog
 	name = "Grog"
@@ -1519,6 +1525,7 @@
 
 	glass_name = "Pan-Galactic Gargle Blaster"
 	glass_desc = "Does... does this mean that Arthur and Ford are on the station? Oh joy."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/gintonic
 	name = "Gin and Tonic"
@@ -1804,6 +1811,7 @@
 
 	glass_name = "Sui Dream"
 	glass_desc = "A froofy, fruity, and sweet mixed drink. Understanding the name only brings shame."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/syndicatebomb
 	name = "Syndicate Bomb"
@@ -1814,6 +1822,7 @@
 
 	glass_name = "Syndicate Bomb"
 	glass_desc = "Tastes like terrorism!"
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/tequilla_sunrise
 	name = "Tequila Sunrise"
@@ -1859,7 +1868,6 @@
 	glass_name = "vodka martini"
 	glass_desc ="A bastardisation of the classic martini. Still great."
 
-
 /datum/reagent/ethanol/vodkatonic
 	name = "Vodka and Tonic"
 	id = "vodkatonic"
@@ -1869,7 +1877,6 @@
 
 	glass_name = "vodka and tonic"
 	glass_desc = "For when a gin and tonic isn't Russian enough."
-
 
 /datum/reagent/ethanol/white_russian
 	name = "White Russian"
@@ -1881,7 +1888,6 @@
 	glass_name = "White Russian"
 	glass_desc = "A very nice looking drink. But that's just, like, your opinion, man."
 
-
 /datum/reagent/ethanol/whiskey_cola
 	name = "Whiskey Cola"
 	id = "whiskeycola"
@@ -1891,7 +1897,7 @@
 
 	glass_name = "whiskey cola"
 	glass_desc = "An innocent-looking mixture of cola and Whiskey. Delicious."
-
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/whiskeysoda
 	name = "Whiskey Soda"
@@ -1902,6 +1908,7 @@
 
 	glass_name = "whiskey soda"
 	glass_desc = "Ultimate refreshment."
+	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/ethanol/specialwhiskey // I have no idea what this is and where it comes from
 	name = "Special Blend Whiskey"
