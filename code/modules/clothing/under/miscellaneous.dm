@@ -825,3 +825,27 @@
 	icon_state = "eros_greaser_snakes"
 	worn_state = "eros_greaser_snakes"
 	siemens_coefficient = 0.75
+
+/obj/item/clothing/under/seccadet
+	name = "security cadet uniform"
+	desc = "A red and grey uniform, specially designed for future security officers."
+	icon_state = "eros_assistsec"
+	worn_state = "eros_assistsec"
+
+/obj/item/clothing/under/techassist
+	name = "technical assistant uniform"
+	desc = "A yellow and grey uniform, specially designed for assistants with a future in engineering."
+	icon_state = "eros_assistseng"
+	worn_state = "eros_assistseng"
+
+/obj/item/clothing/under/medintern
+	name = "medical intern uniform"
+	desc = "A green and wite uniform, specially designed for medically-minded assistants."
+	icon_state = "eros_assistmed"
+	worn_state = "eros_assistmed"
+
+/obj/item/clothing/under/sciassist
+	name = "research assistant uniform"
+	desc = "A purple and wite uniform, specially designed for assistants with an eye for science."
+	icon_state = "eros_assistsci"
+	worn_state = "eros_assistsci"
