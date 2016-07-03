@@ -176,7 +176,7 @@
 			if(target.stomach_contents.len)
 				find_prob = 50
 				user.visible_message("<span class='notice'>[user] starts poking around [target]'s stomach!</span>",
-									 "<span class='notice'>You start poking around [target]'s stomach.</span></span>")
+									 "<span class='notice'>You start poking around [target]'s stomach.</span>")
 				var/a = pick(target.stomach_contents)
 
 				if(ismob(a))
