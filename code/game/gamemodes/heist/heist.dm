@@ -7,8 +7,9 @@ var/global/list/obj/cortical_stacks = list() //Stacks for 'leave nobody behind' 
 /datum/game_mode/heist
 	name = "Heist"
 	config_tag = "heist"
-	required_players = 15
-	required_players_secret = 15
+	votable = 0
+	required_players = 10
+	required_players_secret = 10
 	required_enemies = 4
 	round_description = "An unidentified bluespace signature is approaching the station!"
 	extended_round_description = "The Company's majority control of phoron in "+starsys_name+" has marked the \
