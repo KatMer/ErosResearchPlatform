@@ -3,6 +3,7 @@
 	round_description = "Subversive elements have invaded the station, and certain individuals are feeling uncertain about their safety."
 	extended_round_description = "Traitors and renegades spawn during this round."
 	config_tag = "traitorren"
+	votable = 0
 	required_players = 11			//I don't think we can have it lower and not need an ERT every round.
 	required_players_secret = 11	//I don't think we can have it lower and not need an ERT every round.
 	required_enemies = 4

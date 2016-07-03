@@ -11,6 +11,7 @@
 		friends and family as they try to use your emotions and trust to their advantage, leaving you with nothing \
 		but the painful reminder that space is cruel and unforgiving."
 	config_tag = "traitor"
+	votable = 0
 	required_players = 0
 	required_players_secret = 5
 	required_enemies = 1
@@ -20,6 +21,7 @@
 
 /datum/game_mode/traitor/auto
 	name = "autotraitor"
+	votable = 0
 	config_tag = "autotraitor"
 	antag_tags = list(MODE_AUTOTRAITOR)
 	round_autoantag = 1
