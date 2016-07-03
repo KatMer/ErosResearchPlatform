@@ -4,8 +4,8 @@
 	extended_round_description = "Mercenaries and traitors spawn during this round."
 	config_tag = "mercren"
 	votable = 0
-	required_players = 16			//What could possibly go wrong?
-	required_players_secret = 15
+	required_players = 25			//What could possibly go wrong?
+	required_players_secret = 25
 	required_enemies = 8
 	end_on_antag_death = 0
 	antag_tags = list(MODE_MERCENARY, MODE_RENEGADE)
