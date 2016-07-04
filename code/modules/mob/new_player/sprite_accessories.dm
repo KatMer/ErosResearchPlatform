@@ -1242,3 +1242,8 @@
 		name = "Demon Tail, Red"
 		icon_state = "demon"
 		do_colouration = 0
+
+	tal_scorpius
+		name = "Scorpius FBP Tail"
+		icon_state = "scorpius"
+		do_colouration = 0
