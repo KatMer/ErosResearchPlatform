@@ -50,8 +50,8 @@
 /var/list/economic_species_modifier = list(
 										/datum/species/human					= 10,
 										/datum/species/skrell					= 12,
-										/datum/species/teshari					= 9, // Skrell sponsored,
-										/datum/species/akula					= 9, // Also tied to Skrell lore-wise
+										/datum/species/teshari					= 9,
+										/datum/species/akula					= 9,
 										/datum/species/shapeshifter/promethean	= 6,
 										/datum/species/tajaran					= 7,
 										/datum/species/unathi					= 7,
