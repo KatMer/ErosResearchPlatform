@@ -2,6 +2,8 @@
 ///Clothing Genitals Details /////
 //////////////////////////////////
 
+//suits
+
 /obj/item/clothing/suit/unathi/mantle
 	show_genitals= 1
 
@@ -56,6 +58,12 @@
 
 /obj/item/clothing/suit/wizrobe/marisa
 	show_genitals = 1
+
+/obj/item/clothing/suit/storage/toggle/bomber
+	show_genitals = 1
+	show_boobs = 1
+
+//uniforms!
 
 /obj/item/clothing/under/color/blackjumpskirt
 	show_genitals = 1
