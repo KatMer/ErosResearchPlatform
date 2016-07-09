@@ -1,5 +1,5 @@
 /obj/item/weapon/material/twohanded/baseballbat
-	name = "bat"
+	name = "spaceball bat"
 	desc = "HOME RUN!"
 	icon_state = "metalbat0"
 	base_icon = "metalbat"
