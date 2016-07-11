@@ -819,3 +819,10 @@
 	name = "lolita dress"
 	icon_state = "eros_lolitadress"
 	item_state = "eros_lolitadress"
+	
+/obj/item/clothing/suit/strapon
+	name = "strapon"
+	desc = "Kinky."
+	icon_state = ""
+	item_state = ""
+	body_parts_covered = LOWER_TORSO
