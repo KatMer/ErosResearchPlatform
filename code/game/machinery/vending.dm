@@ -1028,7 +1028,8 @@
 					/obj/item/weapon/fluff/dildos/purpledong = 4,
 					/obj/item/weapon/fluff/dildos/blue = 4,
 					/obj/item/weapon/fluff/fleshlight = 4,
-					/obj/item/weapon/fluff/bulletvibe = 4)
+					/obj/item/weapon/fluff/bulletvibe = 4,
+					/obj/item/clothing/suit/strapon = 4)
 
 	prices = list(/obj/item/weapon/fluff/dildos/bigblackdick = 15,
 					/obj/item/weapon/fluff/dildos/metal_dildo = 13,
@@ -1037,6 +1038,7 @@
 					/obj/item/weapon/fluff/dildos/purpledong = 8,
 					/obj/item/weapon/fluff/dildos/blue = 8,
 					/obj/item/weapon/fluff/fleshlight = 10,
-					/obj/item/weapon/fluff/bulletvibe = 4,)
+					/obj/item/weapon/fluff/bulletvibe = 4,
+					/obj/item/clothing/suit/strapon = 20)
 
 	contraband = list(/obj/item/weapon/fluff/dildos/uglyhorse = 2)
